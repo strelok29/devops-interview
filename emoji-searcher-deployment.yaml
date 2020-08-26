@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emoji-searcher-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      component: emoji
+  template:
+    metadata:
+      labels:
+        component: emoji
+    spec:
+      containers:
+        - name: emoji-searcher
+          image: strelok2911/emoji-searcher
+          ports:
+            - containerPort: 3000
