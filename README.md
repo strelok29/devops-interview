@@ -1,4 +1,4 @@
-# Emoji Search (Container Version)
+# Emoji Search (Container, Kubernetes and Automate Version)
 
 
 ## Description
